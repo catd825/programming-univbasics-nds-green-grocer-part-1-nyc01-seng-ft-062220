@@ -34,7 +34,7 @@ cart_with_count = []
         :item =>  cart[index][:item],
         :price => cart[index][:price],
         :clearance =>  cart[index][:clearance],
-        :count =>  1
+        #:count =>  1
         }
         cart_with_count << hash
       end
