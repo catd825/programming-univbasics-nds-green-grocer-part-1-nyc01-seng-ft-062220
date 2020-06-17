@@ -36,7 +36,6 @@ cart_with_count = []
         :count =>  1
         }
         cart_with_count << hash
-
       end
       index += 1
   binding.pry
