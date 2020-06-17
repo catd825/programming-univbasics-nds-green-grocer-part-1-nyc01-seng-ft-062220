@@ -28,7 +28,6 @@ cart_with_count = []
     hash.each do |hash_key, hash_value|
     found_item = find_item_by_name_in_collection(hash_value, cart_with_count)
       if found_item != nil
-              binding.pry
       else
         cart_with_count= {
           cart[index][:item],
@@ -40,6 +39,7 @@ cart_with_count = []
 
       end
       index += 1
+  binding.pry
     end
   end
 
