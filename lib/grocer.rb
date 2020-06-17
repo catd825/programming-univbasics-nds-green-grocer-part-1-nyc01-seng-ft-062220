@@ -22,7 +22,7 @@ end
 
 
 def consolidate_cart(cart) 
-new_cart
+new_cart=[]
   
   cart.each_with_index do |item, index|
 binding.pry
