@@ -32,7 +32,7 @@ new_cart=[]
     else
       cart[index][:count] = 1 #if current item selected does not exist yet and is therefore nil, count starts at 1
       new_cart << cart[index] #push the revised hash we are currently iterating with count into the new array
-    binding.pry
+    #binding.pry
     end
     index += 1
   end
