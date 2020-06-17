@@ -27,6 +27,7 @@ cart_with_count = []
 
 
   cart.each_with_index do |hash, index|
+    hash[:count] = 0
     hash.each do |hash_key, hash_value|
       
 
