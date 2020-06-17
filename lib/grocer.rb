@@ -32,6 +32,7 @@ cart_with_count = []
     
       binding.pry
     end
+  end
 
 cart_with_count
 
