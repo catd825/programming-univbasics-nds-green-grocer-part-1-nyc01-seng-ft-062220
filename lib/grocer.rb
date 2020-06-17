@@ -26,7 +26,6 @@ cart_with_count = []
   cart.each do |hash|
     hash[:count] = 1
     hash.each do |hash_key, hash_value|
-
     found_item = find_item_by_name_in_collection(hash_value,cart_with_count)
                    binding.pry
       if found_item != nil
