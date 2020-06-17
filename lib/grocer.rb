@@ -32,9 +32,10 @@ new_cart=[]
     else
       cart[index][:count] = 1
       new_cart << cart[index]
+  
     end
     index += 1
-binding.pry
+  binding.pry
   end
   new_cart
 end
