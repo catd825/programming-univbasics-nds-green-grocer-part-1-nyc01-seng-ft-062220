@@ -30,6 +30,9 @@ cart_with_count = []
       if found_item != nil
               binding.pry
       else
+        cart_with_count= {
+          
+        }
         cart_with_count << hash
 
       end
