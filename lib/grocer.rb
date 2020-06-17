@@ -28,10 +28,10 @@ cart_with_count = []
     hash.each do |hash_key, hash_value|
     counter = find_item_by_name_in_collection(hash_value, cart_with_count)
       if counter != nil
-        #
+              binding.pry
       else
         cart_with_count << hash
-      binding.pry
+
       end
     end
   end
