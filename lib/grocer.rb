@@ -26,7 +26,7 @@ cart_with_count = []
 
 
   cart.each_with_index do |hash, index|
-    find_item_by_name_in_collection(
+    #find_item_by_name_in_collection
     hash[:count] = 0
     hash.each do |hash_key, hash_value|
     
