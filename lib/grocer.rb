@@ -31,7 +31,7 @@ new_cart=[]
       found_item[:count] +=1  
     else
       cart[index][:count] = 1 #if value does not exist yet and is therefore nil, count starts at 1
-      new_cart << cart[index] 
+      new_cart << cart[index] #push the revised array with count into the new array
     binding.pry
     end
     index += 1
