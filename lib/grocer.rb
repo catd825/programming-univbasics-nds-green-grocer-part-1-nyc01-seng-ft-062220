@@ -27,7 +27,7 @@ cart_with_count = []
     hash[:count] = 1
     hash.each do |hash_key, hash_value|
     found_item = find_item_by_name_in_collection(hash_value,cart_with_count)
-                   binding.pry
+
       if found_item != nil
         found_item[:count] += 1
       else
@@ -38,6 +38,7 @@ cart_with_count = []
         :count =>  1
         }
         cart_with_count << hash
+      binding.pry
       end
     end
   end
