@@ -25,9 +25,18 @@ def consolidate_cart(cart)
 new_cart=[]
   
   cart.each_with_index do |item, index|
+    item_name = cart[index][:item]
+    found_item = find_item_by_name_in_collection(item_name,new_cart)
+    if found_item
+      found_item[:count] +=1
+    else
+      cart[index][:count] = 1
+      new_cart << cart[index]
+    end
+    index += 1
 binding.pry
   end
-
+  new_cart
 end
 
 
