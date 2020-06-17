@@ -30,7 +30,7 @@ new_cart=[]
     if found_item #if the found item exists
       found_item[:count] +=1  #add to count
     else
-      cart[index][:count] = 1 #if value does not exist yet and is therefore nil, count starts at 1
+      cart[index][:count] = 1 #if current item selected does not exist yet and is therefore nil, count starts at 1
       new_cart << cart[index] #push the revised array with count into the new array
     binding.pry
     end
