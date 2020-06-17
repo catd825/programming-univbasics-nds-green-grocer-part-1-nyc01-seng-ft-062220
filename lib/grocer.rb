@@ -27,7 +27,7 @@ cart_with_count = []
     index = 1
     hash[:count] = 1
     hash.each do |hash_key, hash_value|
-    found_item = find_item_by_name_in_collection(hash_value, cart_with_count)
+    found_item = find_item_by_name_in_collection(cart[index][:item],cart_with_count)
       if found_item != nil
         found_item[:count] += 1
       else
