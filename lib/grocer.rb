@@ -30,9 +30,9 @@ cart_with_count = []
       if found_item != nil
       else
         cart_with_count= {
-          cart[index][:item],
-          cart[index][:price],
-          cart[index][:clearance],
+        :item =>  cart[index][:item],
+        :price => cart[index][:price],
+        :clearance =>  cart[index][:clearance],
           hash[:count]
         }
         cart_with_count << hash
