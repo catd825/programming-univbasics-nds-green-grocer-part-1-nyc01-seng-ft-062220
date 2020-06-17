@@ -31,7 +31,9 @@ cart_with_count = []
               binding.pry
       else
         cart_with_count= {
-          cart[index]
+          cart[index][:item],
+          cart[index][:price],
+          cart[index][:clearance],
         }
         cart_with_count << hash
 
