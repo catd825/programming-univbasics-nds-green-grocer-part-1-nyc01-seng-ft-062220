@@ -27,8 +27,11 @@ cart_with_count = []
     hash[:count] = 0
     hash.each do |hash_key, hash_value|
     counter = find_item_by_name_in_collection(hash_value, cart_with_count)
-      cart_with_count << counter
+      if counter != nil
+        #
+      else
       binding.pry
+      end
     end
   end
 
