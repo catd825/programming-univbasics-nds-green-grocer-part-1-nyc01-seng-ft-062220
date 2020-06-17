@@ -24,7 +24,7 @@ end
 def consolidate_cart(cart) 
 cart_with_count = []
   cart.each_with_index do |hash, index|
-    index = 1
+    #index = 1
     hash[:count] = 1
     hash.each do |hash_key, hash_value|
     found_item = find_item_by_name_in_collection(cart[index][:item],cart_with_count)
