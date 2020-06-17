@@ -21,8 +21,7 @@ end
 
 
 
-def consolidate_cart(cart) #pass through array of hashes, which include item, price, and clearance
-
+def consolidate_cart(cart) 
 cart_with_count = []
 
 
@@ -39,6 +38,9 @@ cart_with_count = []
 cart_with_count
 
 end
+
+
+#pass through array of hashes, which include item, price, and clearance
 
 #we want to return array of hashes along with COUNT
 # [iterate over each{k=>v, k=>v, k=>v} {k=>v, k=>v, k=>v} {k=>v, k=>v, k=>v}]
