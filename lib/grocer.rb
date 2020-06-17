@@ -40,9 +40,10 @@ cart_with_count = []
         cart_with_count << hash
       end
       index += 1
+ binding.pry
     end
   end
- binding.pry
+
 cart_with_count
 
 end
