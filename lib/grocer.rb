@@ -30,8 +30,6 @@ cart_with_count = []
     hash.each do |hash_key, hash_value|
     
 
-
-
     end
   end
       binding.pry
