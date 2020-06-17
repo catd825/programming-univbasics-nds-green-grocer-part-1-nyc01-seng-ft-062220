@@ -32,9 +32,9 @@ cart_with_count = []
         found_item[:count] += 1
       else
         found_item = {
-        :item =>  cart[index][:item],
-        :price => cart[index][:price],
-        :clearance =>  cart[index][:clearance],
+        :item =>  cart[:item],
+        :price => cart[:price],
+        :clearance =>  cart[:clearance],
         :count =>  1
         }
         cart_with_count << hash
