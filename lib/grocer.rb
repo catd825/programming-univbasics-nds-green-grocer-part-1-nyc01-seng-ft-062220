@@ -34,10 +34,12 @@ cart_with_count = []
           cart[index][:item],
           cart[index][:price],
           cart[index][:clearance],
+          hash[:count]
         }
         cart_with_count << hash
 
       end
+      index += 1
     end
   end
 
