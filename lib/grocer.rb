@@ -25,10 +25,10 @@ def consolidate_cart(cart)
 new_cart=[]
   
   cart.each_with_index do |item, index|  #iterate over the cart for the item and index they are located at 
-    item_name = cart[index][:item] #create variable for the item name - uses the current index to select the hash of 'cart', returns :item key value
-    found_item = find_item_by_name_in_collection(item_name,new_cart)
-    if found_item
-      found_item[:count] +=1
+    item_name = cart[index][:item] #create variable for the item name - uses the current index to select the hash of 'cart', returns curent :item value
+    found_item = find_item_by_name_in_collection(item_name,new_cart) #create found_item variable - uses previously created method to take in the item name of current iteration and the newly created array 
+    if found_item #if the found item is true or false (not nil)
+      found_item[:count] +=1  
     else
       cart[index][:count] = 1
       new_cart << cart[index]
